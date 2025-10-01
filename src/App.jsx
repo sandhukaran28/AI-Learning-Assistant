@@ -18,7 +18,9 @@ export default function AILearningVideo() {
 
     const handleEnded = () => {
       if (src === "/scene-1.mp4") {
+        setTimeout(() => {
         setSrc("/scene-2.mp4");
+        },5000);
       }
     };
 
@@ -44,7 +46,6 @@ export default function AILearningVideo() {
           key={src}
           src={src}
           playsInline
-          muted
           autoPlay
           controls
           style={styles.video}
