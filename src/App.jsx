@@ -36,14 +36,17 @@ export default function AILearningVideo() {
       </div>
 
       {/* Video area */}
-      <div style={{ ...styles.videoWrap, height: `calc(100vh - ${HEADER_H}px)` }}>
+      <div
+        style={{ ...styles.videoWrap, height: `calc(100vh - ${HEADER_H}px)` }}
+      >
         <video
           ref={vidRef}
           key={src}
           src={src}
-          controls={false}
           playsInline
-          autoPlay={true}
+          muted
+          autoPlay
+          controls
           style={styles.video}
         />
       </div>
