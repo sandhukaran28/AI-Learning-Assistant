@@ -41,9 +41,9 @@ export default function AILearningVideo() {
           ref={vidRef}
           key={src}
           src={src}
-          controls
+          controls={false}
           playsInline
-          autoPlay
+          autoPlay={true}
           style={styles.video}
         />
       </div>
